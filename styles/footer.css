@@ -8,6 +8,12 @@ footer {
   align-items: center;
   justify-content: space-between;
 
+  @media (width < 80em) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
   & .logo {
     display: flex;
     align-items: center;
@@ -27,6 +33,11 @@ footer {
 
   & nav{
     display: flex;
+
+    @media (width < 80em) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
     
     & a {
       position: relative;
