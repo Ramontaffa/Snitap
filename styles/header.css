@@ -1,11 +1,16 @@
 header {
-  max-width: 80rem;
+  max-width: 80em;
   width: 100%;
   padding: 1.25rem 2rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-inline: auto;
+
+  @media (width < 80em) {
+    padding-inline: 1.5rem;
+  }
 
   img {
     width: 2rem;
