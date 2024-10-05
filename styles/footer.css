@@ -33,6 +33,7 @@ footer {
 
   & nav{
     display: flex;
+    gap: 2rem;
 
     @media (width < 80em) {
       flex-direction: column;
