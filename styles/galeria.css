@@ -26,6 +26,12 @@ section.galeria {
     "C C D";
     
     gap: 2.5rem;
+
+    @media (width < 80em) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
   }
 
   & figure {
@@ -38,14 +44,26 @@ section.galeria {
       animation-timeline: view();
       animation-range: 100px 300px;
 
+      @media (width < 80em) {
+        animation-range: 50px 150px;
+      }
+
       &.data-delay {
         animation-range: 150px 350px;
+        
+        @media (width < 80em) {
+          animation-range: 50px 150px;
+        }
       }
 
       & > img {
         height: 25rem;
         object-fit: cover;
         transition: scale 0.3s;
+
+        @media (width < 80em) {
+          height: 16rem;
+        }
       }
 
       &:hover {
