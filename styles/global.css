@@ -28,6 +28,10 @@
   --text-xl: 4rem;
 }
 
+body {
+  background-color: var(--bg);
+}
+
 html, button {
   font: 500 1rem/1.5 var(--ff-base);
 }
@@ -44,4 +48,9 @@ h1 {
 h2{
   font-size: var(--text-lg);
   line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
